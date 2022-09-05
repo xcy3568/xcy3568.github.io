@@ -1,0 +1,51 @@
+<html><head></head><body><header>
+<title>xcy homepage</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style1.css">
+</header>
+
+<script>
+    alert("welcome！")
+</script>
+<h1>xcy的个人网站</h1>
+<p>从这里您可以浏览:</p>
+<ul>
+<li><a href="http://info.cern.ch/">世界上第一个网站</a></li>
+<li><a href="https://worldwideweb.cern.ch/browser/">启动万维网</a></li>
+<li><a href="xcy3568.html">访问xcy第一个网页</a></li>
+<li><a href="https://space.bilibili.com/537752382">访问xcy(网站主)的bilibili个人主页</a></li>
+<li><a href="404.html">[已失效]</a></li>
+<li><a href="版权说明.html">xcy个人网站的版权说明</a></li>
+<li><a href="NB.html">装B界面</a></li>
+<li><a href="xcy game homepage.html">xcy个人网站的游戏</a></li>
+<li><a href="xcy Chat下载.html">下载xcy Chat</a></li>
+<li><a href="公告.html">xcy个人网站公告</a></li>
+<li><a href="Search.html">访问xcy的搜索界面</a></li>
+<li><a href="ADS.html">投放广告</a></li>
+<li><a href="xcy浏览器下载.html">下载xcy浏览器</a></li>
+</ul>
+<div class="index-search">
+  <form action="http://www.baidu.com/baidu" target="_blank">
+  <div class="input-group">
+	  <div class="input-group-btn">
+	  </div><!-- /btn-group -->
+	  <input name=tn type=hidden value=baidu>
+	  <input type="text" class="form-control" name=word size=30 id="baidusearch">
+	  <span class="input-group-btn">
+		  <button class="btn btn-info" type="submit">搜索</button>
+	  </span>
+	</div>
+  </form>
+</div>
+
+<script type="text/javascript" src="jquery1.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript">
+	//绑定输入框，这里只能 是ID
+$("#baidusearch").keydown(function(event){
+  event=document.all?window.event:event;
+  if((event.keyCode || event.which)==13){
+  }
+});
+</script>
+</body></html>

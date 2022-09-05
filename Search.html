@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>搜索</title>
+
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+
+
+<div class="index-search">
+  <form action="http://www.baidu.com/baidu" target="_blank">
+  <div class="input-group">
+	  <div class="input-group-btn">
+	  </div><!-- /btn-group -->
+	  <input name=tn type=hidden value=baidu>
+	  <input type="text" class="form-control" name=word size=30 id="baidusearch">
+	  <span class="input-group-btn">
+		  <button class="btn btn-info" type="submit">搜索</button>
+	  </span>
+	</div>
+  </form>
+</div>
+
+<script type="text/javascript" src="jquery1.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript">
+	//绑定输入框，这里只能 是ID
+$("#baidusearch").keydown(function(event){
+  event=document.all?window.event:event;
+  if((event.keyCode || event.which)==13){
+  }
+});
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+</div>
+</body>
+</html>
