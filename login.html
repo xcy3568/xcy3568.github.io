@@ -67,7 +67,7 @@
 <script>
     $(function(){
         // 简单的用户名／密码数据
-        var data = {user:0000,user2:0001,user3:0002,user4:0003,user5:0004}
+        var data = {user:0000,user2:0000,user3:0000,user4:0000,user5:0000}
         var my_name = document.querySelector(".my_name")
         var my_password = document.querySelector(".my_password")
         var times = 0;
@@ -75,7 +75,7 @@
             // 验证用户名和密码
             for(var i in data){
                 if(my_name.value ==i && my_password.value == data[i]){
-                    url = "xcy Chat(user).html?"+my_name.value
+                    url = "xcy Chat.html?"+my_name.value
                     location.href= url
                 }
                 else {
